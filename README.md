@@ -4,11 +4,11 @@
 
 ## Overview
 
-Artifact6 is a minimal, tutorial-grade HTTP server built with the [Express.js](https://expressjs.com/) web framework (Express 5.x, dependency `express ^5.2.1`). It exposes two `GET` endpoints, each returning a short plain-text greeting. The implementation is intentionally compact: a single Express application instance (in `server.js`) registers both routes and binds one HTTP listener.
+Artifact6 is a minimal, tutorial-grade HTTP server built with the [Express.js](https://expressjs.com/) web framework (Express 5.x, dependency `express ^5.2.1`). It exposes two `GET` endpoints, each returning a short plain-text greeting. The implementation is intentionally compact: a single Express application instance (in `server.js`) registers both routes and binds one HTTP listener. It does not include a database, authentication, or user interface.
 
 ## Prerequisites
 
-- **Node.js 18 or higher** — required by Express 5. (Developed and verified against Node.js v22.)
+- **Node.js 18 or higher** — required by Express 5.
 - **npm** — the Node.js package manager, bundled with Node.js.
 
 You can confirm your installed versions with:
