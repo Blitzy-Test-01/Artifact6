@@ -62,3 +62,20 @@ curl localhost:3000/
 curl localhost:3000/good-evening
 # -> Good evening
 ```
+
+## Testing
+
+The project ships with a small smoke-test suite (`test/server.test.js`) that
+verifies each endpoint returns its exact response body. The tests use only the
+Node.js built-in test runner (`node:test`) and standard library — no additional
+dependencies are required. Run them with:
+
+```
+npm test
+```
+
+This runs `node --test`, which starts the Express app on an ephemeral port and
+asserts that `GET /` returns `Hello world` and `GET /good-evening` returns
+`Good evening` (along with the expected `200` status codes and a `404` for
+unknown routes). The suite does not interfere with a server you may already be
+running on port 3000.
